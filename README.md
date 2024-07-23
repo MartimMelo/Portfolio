@@ -1,6 +1,6 @@
 # IT Portfolio
 
-This is a portfolio to keep some of my college assinments and personal projects organized
+This is a portfolio to keep some of my college assignments and personal projects organized
 
 ## Description
 
