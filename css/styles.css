@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b023a; /* Adicione um fundo cinza claro para todo o corpo */
+}
+
+header {
+    background-image: url('../images/background.jpg'); /* Verifique o caminho relativo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Escurece a imagem de fundo */
+    z-index: 0;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 1em;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Linha divisória cinza clara */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #555; /* Texto ligeiramente mais claro */
+    font-size: 1.1em; /* Aumenta o tamanho do texto */
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 1em;
+    background-color: rgba(19, 19, 19, 0.753);
+}
+
+.project {
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Adiciona transição suave para o zoom */
+    position: relative;
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Adiciona transição suave para o zoom e a cor do texto */
+}
+
+.project-info h2, .project-info p, .project-info span {
+    margin: 0;
+}
+
+.project-info h2 {
+    font-size: 1.5em;
+}
+
+.project-info p {
+    margin: 0.5em 0;
+}
+
+.project-info span {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Efeitos de hover */
+.project:hover {
+    transform: scale(1.05); /* Efeito de zoom no projeto */
+}
+
+.project:hover .project-info {
+    transform: scale(1.05); /* Efeito de zoom nas informações do projeto */
+    color: #333; /* Torna a cor do texto mais escura */
+}
+
+.sidebar nav ul li :hover{
+    text-decoration: underline;
+}

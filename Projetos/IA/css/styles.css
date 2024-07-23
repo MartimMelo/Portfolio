@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    font-family: Monospace,	Courier New;
+    background-color: #052006;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    padding: 1em;
+}
+
+/*-----------------------------------------------*/
+
+
+
+
+
